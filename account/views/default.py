@@ -7,10 +7,10 @@ from utils.api import APIView, validate_serializer, CSRFExemptAPIView
 class Register(APIView):
     def get(self, request):
         print('test')
-        user = User.objects.create(username='test', email='test@test.com', schoolssn=12341234, realname='test')
-        user.set_password('12341234')
-        user.save()
-        print('user added')
+        # user = User.objects.create(username='test', email='test@test.com', schoolssn=12341234, realname='test')
+        # user.set_password('12341234')
+        # user.save()
+        # print('user added')
         return self.success('??????')
 
 class UserTest(APIView):

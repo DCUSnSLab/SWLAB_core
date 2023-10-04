@@ -28,6 +28,10 @@
   python manage.py makemigrations
   python manage.py migrate
   ```
+- DB 초기화 (dbtest/init_swlabcore.py 실행)
+   ```console
+  python dbtest/init_swlabcore.py
+  ```
 - run server
   ```console
   python manage.py runserver 8000
