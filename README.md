@@ -2,7 +2,6 @@
 
 ## Introduction
 
----
 ### Computer Science 관련 실습 강의를 위한 온라인 통합 플랫폼
 
 ### Main Goal
@@ -12,7 +11,6 @@
 
 ## Install Information
 
----
 ### Requirements
 
 - Python 3.9
