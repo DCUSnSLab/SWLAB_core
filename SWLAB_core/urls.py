@@ -20,7 +20,9 @@ from django.conf.urls import include
 from django.urls import include, re_path
 
 urlpatterns = [
-    re_path(r"^api/", include("account.urls.defult")),
+    re_path(r"^api/", include("account.urls.default")),
+    re_path(r"^api/", include("lecture.urls.default")),
+    re_path(r"^api/admin/", include("lecture.urls.admin")),
     # url(r"^api/admin/", include("account.urls.admin")),
     # path('admin/', admin.site.urls),
 ]

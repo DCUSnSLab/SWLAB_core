@@ -83,13 +83,34 @@ WSGI_APPLICATION = 'SWLAB_core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'HOST': get_env("POSTGRES_HOST", "oj-postgres"),
+#         'PORT': get_env("POSTGRES_PORT", "5432"),
+#         'NAME': get_env("POSTGRES_DB"),
+#         'USER': get_env("POSTGRES_USER"),
+#         'PASSWORD': get_env("POSTGRES_PASSWORD")
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'HOST': '203.250.33.99',
+        'PORT': '30053',
+        'NAME': 'swlab',
+        'USER': 'snslab',
+        'PASSWORD': 'snslab'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

@@ -1,4 +1,4 @@
-from ..views.defult import Register, UserLoginAPI, UserTest
+from ..views.default import Register, UserLoginAPI, UserTest
 from django.urls import re_path
 
 urlpatterns = [
